@@ -23,8 +23,8 @@ public class Pr4_LongestIncreasingSequence {
 		int counterTemp = 1;
 		int counter = 1;
 		int positionOfInt = 0; // positionOfInt shows the position of the
-								// largest integer in the longest increasing
-								// sequence
+					// largest integer in the longest increasing
+					// sequence
 
 		System.out.print(numbers[0]);
 		for (int i = 1; i < arr.length; i++) {
