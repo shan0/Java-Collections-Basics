@@ -11,21 +11,17 @@ public class Pr9_CombineListsОfLetters {
 
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
-		char[] FirstLine = in.nextLine().toCharArray();
-		char[] SecondLine = in.nextLine().toCharArray();
 		ArrayList<Character> arrFL = new ArrayList<Character>();
 		ArrayList<Character> arrSL = new ArrayList<Character>();
 		ArrayList<Character> arrPrint = new ArrayList<Character>();
-		
-		for (int i = 0; i < FirstLine.length; i++) {
-			arrFL.add(FirstLine[i]);
+
+		for (char ch : in.nextLine().toCharArray()) {
+			arrFL.add(ch);
 		}
-		for (int i = 0; i < SecondLine.length; i++) {
-			arrSL.add(SecondLine[i]);
+		for (char ch : in.nextLine().toCharArray()) {
+			arrSL.add(ch);
 		}
-		for (int i = 0; i < FirstLine.length; i++) {
-			arrPrint.add(FirstLine[i]);
-		}
+		arrPrint.addAll(arrFL);
 
 		for (int i = 0; i < arrSL.size(); i++) {
 			if (arrFL.contains(arrSL.get(i))) {
